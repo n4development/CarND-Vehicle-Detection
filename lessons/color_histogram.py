@@ -39,5 +39,6 @@ if rh is not None:
     plt.xlim(0, 256)
     plt.title('B Histogram')
     fig.tight_layout()
+    plt.show()
 else:
     print('Your function is returning None for at least one variable...')

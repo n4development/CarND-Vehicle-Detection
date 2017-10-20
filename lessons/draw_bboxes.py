@@ -23,3 +23,4 @@ bboxes =  [((275, 572), (380, 510)), ((488, 563), (549, 518)), ((554, 543), (582
 
 result = draw_boxes(image, bboxes)
 plt.imshow(result)
+plt.show()
