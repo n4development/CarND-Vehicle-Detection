@@ -2,8 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f43bf104-d607-47ff-9a37-c67ddb669b0a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lessons/color_histogram.py" afterPath="$PROJECT_DIR$/lessons/color_histogram.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lessons/draw_bboxes.py" afterPath="$PROJECT_DIR$/lessons/draw_bboxes.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lessons/utils.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lessons/000275.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lessons/000528.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lessons/001240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lessons/2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lessons/25.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lessons/3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lessons/31.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lessons/53.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lessons/8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lessons/bbox-example-image.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lessons/color_histogram.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lessons/cutout1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lessons/cutout2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lessons/cutout3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lessons/cutout4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lessons/cutout5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lessons/cutout6.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lessons/car_classifier.py" afterPath="$PROJECT_DIR$/lessons/car_classifier.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lessons/template_match.py" afterPath="$PROJECT_DIR$/lessons/template_match.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,68 +32,99 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="draw_bboxes.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lessons/draw_bboxes.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="51" lean-forward="false" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="color_histogram.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lessons/color_histogram.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="color_space_plot3d.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lessons/color_space_plot3d.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="car_classifier.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lessons/car_classifier.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1080">
-              <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="template_match.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lessons/template_match.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="27" column="35" lean-forward="false" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.4763158">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="color_space_plot3d.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lessons/color_space_plot3d.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="918">
+                  <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="10" />
+                  <folding>
+                    <element signature="e#0#10#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="draw_bboxes.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lessons/draw_bboxes.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="450">
+                  <caret line="25" column="10" lean-forward="false" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+                  <folding>
+                    <element signature="e#0#18#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="car_classifier.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/lessons/car_classifier.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="288">
+                  <caret line="104" column="44" lean-forward="false" selection-start-line="104" selection-start-column="28" selection-end-line="104" selection-end-column="44" />
+                  <folding>
+                    <element signature="e#0#32#0" expanded="true" />
+                    <element signature="e#787#1411#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_hog.py" pinned="false" current-in-tab="false">
+            <entry file="file://$USER_HOME$/miniconda3/envs/carnd-term1/lib/python3.5/site-packages/skimage/feature/_hog.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="209">
+                  <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="template_match.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lessons/template_match.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="644">
+                  <caret line="46" column="34" lean-forward="false" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="34" />
+                  <folding>
+                    <element signature="e#0#18#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="utils.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/lessons/utils.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="346">
+                  <caret line="74" column="86" lean-forward="false" selection-start-line="74" selection-start-column="86" selection-end-line="74" selection-end-column="86" />
+                  <folding>
+                    <element signature="e#0#18#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="traning_model.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/traning_model.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="108">
+                  <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+                  <folding>
+                    <element signature="e#0#11#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -86,6 +136,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>templist</find>
+      <find>color_hist</find>
+      <find>extract_features</find>
+      <find>skimage_deprecation</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -94,19 +147,22 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lessons/template_match.py" />
         <option value="$PROJECT_DIR$/lessons/color_space_plot3d.py" />
-        <option value="$PROJECT_DIR$/lessons/car_classifier.py" />
-        <option value="$PROJECT_DIR$/lessons/color_histogram.py" />
         <option value="$PROJECT_DIR$/lessons/draw_bboxes.py" />
+        <option value="$PROJECT_DIR$/lessons/template_match.py" />
+        <option value="$PROJECT_DIR$/lessons/norm_shuffle.py" />
+        <option value="$PROJECT_DIR$/lessons/color_histogram.py" />
+        <option value="$PROJECT_DIR$/lessons/car_classifier.py" />
+        <option value="$PROJECT_DIR$/traning_model.py" />
+        <option value="$PROJECT_DIR$/lessons/utils.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="65" />
+    <option name="x" value="1697" />
     <option name="y" value="-4" />
-    <option name="width" value="1855" />
-    <option name="height" value="1084" />
+    <option name="width" value="1853" />
+    <option name="height" value="1076" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -170,7 +226,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.draw_bboxes">
+  <component name="RunManager" selected="Python.car_classifier">
+    <configuration name="car_classifier" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lessons" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CarND-Vehicle-Detection" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lessons/car_classifier.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="color_histogram" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -183,7 +256,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="CarND-Vehicle-Detection" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lessons/color_histogram.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lessons/utils.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -222,16 +295,37 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <list size="3">
+    <configuration name="template_match" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lessons" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CarND-Vehicle-Detection" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lessons/template_match.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.draw_bboxes" />
       <item index="1" class="java.lang.String" itemvalue="Python.color_space_plot3d" />
       <item index="2" class="java.lang.String" itemvalue="Python.color_histogram" />
+      <item index="3" class="java.lang.String" itemvalue="Python.template_match" />
+      <item index="4" class="java.lang.String" itemvalue="Python.car_classifier" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.draw_bboxes" />
-        <item index="1" class="java.lang.String" itemvalue="Python.color_histogram" />
-        <item index="2" class="java.lang.String" itemvalue="Python.color_space_plot3d" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.car_classifier" />
+        <item index="1" class="java.lang.String" itemvalue="Python.color_space_plot3d" />
+        <item index="2" class="java.lang.String" itemvalue="Python.draw_bboxes" />
+        <item index="3" class="java.lang.String" itemvalue="Python.template_match" />
+        <item index="4" class="java.lang.String" itemvalue="Python.color_histogram" />
       </list>
     </recent_temporary>
   </component>
@@ -249,18 +343,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1875" height="1092" extended-state="6" />
-    <editor active="true" />
+    <frame x="1967" y="-4" width="1873" height="1084" extended-state="6" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1884677" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -276,7 +369,15 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/lessons/car_classifier.py</url>
+          <line>32</line>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -310,34 +411,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lessons/cutout1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lessons/template_match.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="27" column="35" lean-forward="false" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+        <state relative-caret-position="644">
+          <caret line="46" column="34" lean-forward="false" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="34" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lessons/cutout1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lessons/car_classifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lessons/color_space_plot3d.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
+        <state relative-caret-position="918">
           <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="10" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
@@ -345,20 +436,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lessons/color_histogram.py">
+    <entry file="file://$PROJECT_DIR$/lessons/norm_shuffle.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lessons/draw_bboxes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="10" lean-forward="false" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lessons/draw_bboxes.py">
+    <entry file="file://$PROJECT_DIR$/traning_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="51" lean-forward="false" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+        <state relative-caret-position="108">
+          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/miniconda3/envs/carnd-term1/lib/python3.5/site-packages/skimage/feature/_hog.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lessons/car_classifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="104" column="44" lean-forward="false" selection-start-line="104" selection-start-column="28" selection-end-line="104" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#787#1411#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lessons/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="74" column="86" lean-forward="false" selection-start-line="74" selection-start-column="86" selection-end-line="74" selection-end-column="86" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

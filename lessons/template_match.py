@@ -53,3 +53,5 @@ def find_matches(img, template_list):
 bboxes = find_matches(image, templist)
 result = draw_boxes(image, bboxes)
 plt.imshow(result)
+plt.show()
+
