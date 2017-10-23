@@ -5,7 +5,7 @@ import cv2
 import glob
 import ntpath
 import utils
-import traning_model
+import svm_hog_model_train
 import sliding_window
 from sklearn.preprocessing import StandardScaler
 import pickle
@@ -20,12 +20,12 @@ print(len(images))
 cars = []
 notcars = []
 
-for image in images:
-    head, tail = ntpath.split(image)
-    if 'image' in tail or 'extra' in tail:
-        notcars.append(image)
-    else:
-        cars.append(image)
+# for image in images:
+#     head, tail = ntpath.split(image)
+#     if 'image' in tail or 'extra' in tail:
+#         notcars.append(image)
+#     else:
+#         cars.append(image)
 
 print('* images analysis ',
       len(cars), ' cars and',
@@ -121,10 +121,10 @@ car_ind = np.random.randint(0, len(cars))
 #                                              vis=True, feature_vec=False)
 print('Using:', orient, 'orientations', pix_per_cell, 'pixels per cell and', cell_per_block, 'cells per block')
 # traning_model.color_classifier(X=scaled_X, Y=y, spatial=spatial, histbin=histbin)
-svc = traning_model.HOG_classifier(X=scaled_X, Y=y)
+svc = svm_hog_model_train.HOG_classifier(X=scaled_X, Y=y)
 pickle_dist = dict({'svc': svc, 'scaler': X_scaler, 'orient': orient, 'pix_per_cell': pix_per_cell,
                    'cell_per_block': cell_per_block, 'spatial_size': spatial_size, 'hist_bins': hist_bins})
-pickle.dump(pickle_dist, open("svc_pickle_2.p", "wb"))
+pickle.dump(pickle_dist, open("svc_pickle_v3.p", "wb"))
 # fig = plt.figure()
 # plt.subplot(121)
 # plt.imshow(car_image)
