@@ -6,7 +6,10 @@ import glob
 import ntpath
 import utils
 import traning_model
+import sliding_window
 from sklearn.preprocessing import StandardScaler
+import pickle
+from sklearn.svm import LinearSVC
 
 # from skimage.feature import hog
 # from skimage import color, exposure
@@ -58,34 +61,41 @@ sample_size = 500
 cars = cars[0:sample_size]
 notcars = notcars[0:sample_size]
 
-# Can be RGB, HSV, LUV, HLS, YUV, YCrCb
-colorspace = 'HSV'
-# Define HOG parameters
-orient = 10
-pix_per_cell = 8
-cell_per_block = 2
-# Can be 0, 1, 2, 3
-hog_channel = 3
-spatial = 32
-histbin = 32
+color_space = 'RGB' # Can be RGB, HSV, LUV, HLS, YUV, YCrCb
+orient = 9  # HOG orientations
+pix_per_cell = 8 # HOG pixels per cell
+cell_per_block = 2 # HOG cells per block
+hog_channel = 0 # Can be 0, 1, 2, or "ALL"
+spatial_size = (16, 16) # Spatial binning dimensions
+hist_bins = 32    # Number of histogram bins
+spatial_feat = True # Spatial features on or off
+hist_feat = True # Histogram features on or off
+hog_feat = True # HOG features on or off
+y_start_stop = [400, 700] # Min and max in y to search in slide_window()
 
 # car_ind = np.random.randint(0, len(cars))
 # notcar_ind = np.random.randint(0, len(notcars))
-car_features = utils.extract_features(cars, cspace=colorspace, orient=orient,
-                        pix_per_cell=pix_per_cell, cell_per_block=cell_per_block,
-                        hog_channel=hog_channel)
-notcar_features = utils.extract_features(notcars, cspace=colorspace, orient=orient,
-                        pix_per_cell=pix_per_cell, cell_per_block=cell_per_block,
-                        hog_channel=hog_channel)
+car_features = utils.extract_features(cars, color_space=color_space,
+                        spatial_size=spatial_size, hist_bins=hist_bins,
+                        orient=orient, pix_per_cell=pix_per_cell,
+                        cell_per_block=cell_per_block,
+                        hog_channel=hog_channel, spatial_feat=spatial_feat,
+                        hist_feat=hist_feat, hog_feat=hog_feat)
+notcar_features = utils.extract_features(notcars, color_space=color_space,
+                        spatial_size=spatial_size, hist_bins=hist_bins,
+                        orient=orient, pix_per_cell=pix_per_cell,
+                        cell_per_block=cell_per_block,
+                        hog_channel=hog_channel, spatial_feat=spatial_feat,
+                        hist_feat=hist_feat, hog_feat=hog_feat)
 
-
-# Create an array stack of feature vectors
-feature_list = [car_features, notcar_features]
-X = np.vstack(feature_list).astype(np.float64)
+X = np.vstack((car_features, notcar_features)).astype(np.float64)
+print(X.shape)
 # Fit a per-column scaler
 X_scaler = StandardScaler().fit(X)
 # Apply the scaler to X
 scaled_X = X_scaler.transform(X)
+y = np.hstack((np.ones(len(car_features)), np.zeros(len(notcar_features))))
+
 car_ind = np.random.randint(0, len(cars))
 # Plot an example of raw and scaled features
 # fig = plt.figure(figsize=(12,4))
@@ -110,10 +120,11 @@ car_ind = np.random.randint(0, len(cars))
 #                                              pix_per_cell, cell_per_block,
 #                                              vis=True, feature_vec=False)
 print('Using:', orient, 'orientations', pix_per_cell, 'pixels per cell and', cell_per_block, 'cells per block')
-y = np.hstack((np.ones(len(car_features)), np.zeros(len(notcar_features))))
 # traning_model.color_classifier(X=scaled_X, Y=y, spatial=spatial, histbin=histbin)
-traning_model.HOG_classifier(X=scaled_X, Y=y)
-
+svc = traning_model.HOG_classifier(X=scaled_X, Y=y)
+pickle_dist = dict({'svc': svc, 'scaler': X_scaler, 'orient': orient, 'pix_per_cell': pix_per_cell,
+                   'cell_per_block': cell_per_block, 'spatial_size': spatial_size, 'hist_bins': hist_bins})
+pickle.dump(pickle_dist, open("svc_pickle_2.p", "wb"))
 # fig = plt.figure()
 # plt.subplot(121)
 # plt.imshow(car_image)
@@ -132,3 +143,28 @@ traning_model.HOG_classifier(X=scaled_X, Y=y)
 # plt.title('HOG Visualization')
 #
 # plt.show()
+
+
+# Split up data into randomized training and test sets
+
+
+image = mpimg.imread('extra_img/bbox-example-image.jpg')
+draw_image = np.copy(image)
+
+# Uncomment the following line if you extracted training
+# data from .png images (scaled 0 to 1 by mpimg) and the
+# image you are searching is a .jpg (scaled 0 to 255)
+#image = image.astype(np.float32)/255
+windows = sliding_window.slide_window(image, x_start_stop=[None, None], y_start_stop=y_start_stop,
+                    xy_window=(96, 96), xy_overlap=(0.5, 0.5))
+hot_windows = sliding_window.search_windows(image, windows, svc, X_scaler, color_space=color_space,
+                        spatial_size=spatial_size, hist_bins=hist_bins,
+                        orient=orient, pix_per_cell=pix_per_cell,
+                        cell_per_block=cell_per_block,
+                        hog_channel=hog_channel, spatial_feat=spatial_feat,
+                        hist_feat=hist_feat, hog_feat=hog_feat, y_start_stop=y_start_stop, scale=1.5)
+
+# window_img = utils.draw_boxes(draw_image, hot_windows, color=(0, 255, 0), thick=6)
+
+plt.imshow(hot_windows)
+plt.show()
