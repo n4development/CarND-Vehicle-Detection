@@ -52,7 +52,7 @@ Features were then scaled with the `sklearn.preprocessing StandardScaler`
 
 Most of the work was done in the RGB color space. The many false positives lead to much experimentation with the classifier parameters. No other classifiers were attempted based on some reports from colleagues. If false positives had not been solved, I would have attempted a deep neural network.
 
-Almost all of the code used for feature extraction and training the classifier was taken from the course material and checked. This makes use of the `skimage.hog` function. This section of the project can be found in [P5_Extract_Features_Train_SVC.ipynb](./P5_Extract_Features_Train_SVC.ipynb) This notebook outputs a pickled classifier, scaler and parameters.
+Almost all of the code used for feature extraction and training the classifier was taken from the course material and checked. This makes use of the `skimage.hog` function. This section of the project can be found in [vehicle_detection.ipynb](vehicle_detection.ipynb) This notebook outputs a pickled classifier, scaler and parameters.
 
 **Improvements:** Further optimization of number of parameters vs. run time vs. accuracy vs. false positives could have been carried out.
 
